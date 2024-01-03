@@ -1,0 +1,19 @@
+ruby: 
+  navigation_links = [
+    { name: 'Home', to: root_path },
+    { name: 'Login', to: root_path },
+    { name: 'Register', to: root_path },
+  ]
+
+header(class="navigation")
+  strong textspace.com
+
+  search
+    form
+      label(for='friend' class='sr-only') Find a friend
+      input(type='search' id='friend' name='q' placeholder='Find a friend')
+  
+  nav
+    ul(class='navigation__links')
+      - navigation_links.each do |link|
+        li = link_to "#{link[:name]}", "#{link[:to]}"
