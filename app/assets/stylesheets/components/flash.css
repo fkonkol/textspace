@@ -1,0 +1,13 @@
+.flash {
+  padding: 1rem;
+}
+
+.flash[data-type='notice'] {
+  background: lightgreen;
+  color: green;
+}
+
+.flash[data-type='alert'] {
+  background: pink;
+  color: crimson; 
+}

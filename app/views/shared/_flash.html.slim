@@ -1,0 +1,6 @@
+- if notice.present?
+  section(class='flash' data-type='notice')
+    span = notice 
+- elsif alert.present?
+  section(class='flash' data-type='alert')
+    span = alert 
